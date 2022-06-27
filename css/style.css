@@ -774,6 +774,7 @@ body {
 	color: var(--paragraf-txt-color);
 	padding-bottom: 30px;
 	display: flex;
+	padding-left: 12px;
 }
 .modal-privicy::before {
 	content: "";
