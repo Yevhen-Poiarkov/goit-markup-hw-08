@@ -1,0 +1,32 @@
+.benefits {
+	padding-bottom: 0;
+}
+.benefits-list {
+	display: flex;
+	justify-content: space-between;
+}
+.benefits-pre-text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-txt-color);
+	margin-bottom: 10px;
+}
+.benefits-text {
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--paragraf-txt-color);
+	margin-bottom: 18px;
+	width: 270px;
+}
+.team-benefits-link {
+	width: 270px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+}
