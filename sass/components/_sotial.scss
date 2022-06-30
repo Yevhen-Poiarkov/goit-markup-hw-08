@@ -1,32 +1,29 @@
-.team-sotial-list {
+.sotial__list {
 	display: flex;
 	justify-content: center;
 }
-.team-sotial-li {
+.sotial__li {
 	width: 44px;
 	height: 44px;
 	margin-right: 10px;
 }
-.team-sotial-li:last-child {
+.sotial__li:last-child {
 	margin: 0;
 }
-.team-sotial-link {
+.sotial__link {
 	width: 100%;
 	height: 100%;
-	background-color: var(--white-color);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #afb1b8;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-sotial-icon {
+.sotial__icon {
 	fill: currentColor;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-sotial-link:hover,
-.team-sotial-link:focus {
+.sotial__link:hover,
+.sotial__link:focus {
 	background-color: var(--accent-color);
 	color: var(--white-color);
 }

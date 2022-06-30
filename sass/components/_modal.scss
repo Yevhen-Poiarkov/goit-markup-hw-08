@@ -6,9 +6,7 @@
 	top: 0;
 	transition: opacity 300ms, visibility 300ms;
 }
-.backdrop.is-hidden .modal {
-	transform: translate (-50%, -50%) scale(0);
-}
+
 .modal {
 	width: 528px;
 	min-height: 581px;
@@ -23,6 +21,9 @@
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 250ms;
 	padding: 40px;
+	.backdrop.is-hidden & {
+		transform: translate (-50%, -50%) scale(0);
+	}
 }
 .modal-close {
 	width: 30px;
@@ -56,6 +57,9 @@
 	left: 12px;
 	top: 50%;
 	transform: translateY(-50%);
+	.modal-input:focus + & {
+		fill: var(--accent-color);
+	}
 }
 .modal-input {
 	width: 100%;
@@ -64,13 +68,11 @@
 	border-radius: 4px;
 	padding-left: 42px;
 	outline: none;
+	&:focus {
+		border-color: var(--accent-color);
+	}
 }
-.modal-input:focus {
-	border-color: var(--accent-color);
-}
-.modal-input:focus + .modal-icon {
-	fill: var(--accent-color);
-}
+
 .modal-label {
 	font-weight: 400;
 	font-size: 12px;
@@ -87,10 +89,11 @@
 	outline: none;
 	padding-left: 16px;
 	font-size: 14px;
+	&:focus {
+		border-color: var(--accent-color);
+	}
 }
-.modal-text:focus {
-	border-color: var(--accent-color);
-}
+
 .modal-privicy {
 	font-weight: 400;
 	font-size: 14px;
@@ -98,15 +101,16 @@
 	padding-bottom: 30px;
 	display: flex;
 	padding-left: 12px;
+	&::before {
+		content: "";
+		width: 16px;
+		height: 15px;
+		border: 2px solid var(--main-txt-color);
+		border-radius: 3px;
+		margin-right: 5px;
+	}
 }
-.modal-privicy::before {
-	content: "";
-	width: 16px;
-	height: 15px;
-	border: 2px solid var(--main-txt-color);
-	border-radius: 3px;
-	margin-right: 5px;
-}
+
 .modal-check:checked + .modal-privicy::before {
 	background-color: var(--accent-color);
 	background-image: url(../images/icon\ check.svg);
