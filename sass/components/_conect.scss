@@ -1,16 +1,16 @@
-.sotial__list {
+.conect__list {
 	display: flex;
 	justify-content: center;
 }
-.sotial__li {
+.conect__li {
 	width: 44px;
 	height: 44px;
 	margin-right: 10px;
 }
-.sotial__li:last-child {
+.conect__li:last-child {
 	margin: 0;
 }
-.sotial__link {
+.conect__link {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -18,12 +18,12 @@
 	align-items: center;
 	justify-content: center;
 }
-.sotial__icon {
+.conect__icon {
 	fill: currentColor;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sotial__link:hover,
-.sotial__link:focus {
+.conect__link:hover,
+.conect__link:focus {
 	background-color: var(--accent-color);
 	color: var(--white-color);
 }
