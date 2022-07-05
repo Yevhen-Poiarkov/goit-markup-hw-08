@@ -1,5 +1,9 @@
 .team {
 	background-color: #f5f4fa;
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 94px;
+		padding-top: 94px;
+	}
 	&__text {
 		font-weight: 700;
 		font-size: 36px;
@@ -11,8 +15,11 @@
 		justify-content: center;
 	}
 	&__list {
+		// display: flex;
+		// justify-content: space-around;
 		display: flex;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 	&__li {
 		background-color: var(--white-color);
@@ -20,6 +27,13 @@
 			0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
+
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 90px) / 4);
+		}
 	}
 	&__name {
 		padding-top: 30px;

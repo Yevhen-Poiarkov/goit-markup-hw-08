@@ -1,9 +1,24 @@
 .benefits {
-	padding-bottom: 0;
+	padding-bottom: 60px;
+	padding-top: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 94px;
+		padding-top: 94px;
+	}
 
 	&__list {
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	&__li {
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 30px) / 2);
+		}
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 90px) / 4);
+		}
 	}
 	&__pre-text {
 		font-weight: 700;
